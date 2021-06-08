@@ -16,8 +16,14 @@ body {
     list-style-type: none;
 }
 
+.nav-container {
+    text-align: right;
+}
+
 .nav-container ul li {
     text-decoration: none;
+    position: relative;
+    text-align: right;
 }
 
 .nav-container a {
@@ -25,8 +31,47 @@ body {
     font-style: normal;
     font-weight: normal;
     line-height: 1px;
-    color: antiquewhite;
+    color: white;
     text-decoration: none;
     /* margin-left: 1em; */
     padding: 14px 16px;
+}
+
+.img-container {
+    display: flex;
+    padding: 14px 6px;
+}
+
+.img_1 {
+    height: 60vmin;
+    padding: 20px 140px;
+}
+
+.img_2 {
+    height: 60vmin;
+    padding: 85px 20px;
+}
+
+.img_3 {
+    height: 60vmin;
+    padding: 20px 100px;
+}
+
+.img_4 {
+    height: 60vmin;
+    padding: 85px 20px;
+}
+
+ul li:hover~.cursor {
+    transform: scale(5);
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
 }
