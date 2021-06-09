@@ -6,7 +6,7 @@ This project is a community interaction project, The main motive for this projec
 
 # Installation
 
-Some of the requirements for this project can installed through running the below command inside root `\call4help` directory.
+Some of the requirements for this project can installed through running the below command inside root `\call4help` 📂 directory.
 ```shell
 npm install 
 ```
