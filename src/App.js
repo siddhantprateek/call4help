@@ -4,7 +4,7 @@ import image_3 from "./img/content3.png";
 import image_4 from "./img/content4.png";
 import './App.css';
 import React, { useState } from "react";
-
+// import About from "./about/about";
 
 function App() {
   const [cursorX, setCursorX] = useState()
@@ -15,8 +15,6 @@ function App() {
     setCursorY(e.pageY)
   })
 
-
-
   return (
     <div className="App">
       {/* <div class="cursor-follower"></div> */}
@@ -24,11 +22,12 @@ function App() {
         <div className="logo">
           <img src="" alt="" />
         </div>
+       
 
         <div className="nav-bar">
           <ul className="nav-container">
             <li>
-              <a href="@">About Us</a>
+              <a  href="@">About Us</a>
             </li>
             <li>
               <a href="@">Availability</a>

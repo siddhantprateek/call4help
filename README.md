@@ -8,8 +8,15 @@ This project is a community interaction project, The main motive for this projec
 
 Some of the requirements for this project can installed through running the below command inside root `\call4help` directory.
 ```shell
-npm install requirement.txt
+npm install 
 ```
 
 
 ![Screenshot 2021-06-01 122240](https://user-images.githubusercontent.com/43869046/120279487-22584e80-c2d4-11eb-84e1-2bd073adf139.png)
+
+
+after installing all the required modules run
+```shell
+npm start
+```
+It will run the project locally at [localhost:3000](http://localhost:3000) or on your network at [10.5.0.2:3000](http://10.5.0.2:3000)

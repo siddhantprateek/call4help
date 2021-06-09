@@ -38,28 +38,37 @@ body {
 }
 
 .img-container {
+    display: grid;
     display: flex;
     padding: 14px 6px;
 }
 
+img {
+    display: block;
+}
+
 .img_1 {
     height: 60vmin;
-    padding: 20px 140px;
+    width: auto;
+    padding: 20px 70px;
 }
 
 .img_2 {
     height: 60vmin;
-    padding: 85px 20px;
+    width: auto;
+    padding: 85px 80px;
 }
 
 .img_3 {
     height: 60vmin;
-    padding: 20px 100px;
+    width: auto;
+    padding: 20px 80px;
 }
 
 .img_4 {
     height: 60vmin;
-    padding: 85px 20px;
+    width: auto;
+    padding: 85px 80px;
 }
 
 ul li:hover~.cursor {
