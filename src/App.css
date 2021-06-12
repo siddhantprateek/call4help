@@ -12,18 +12,18 @@ body {
 }
 
 .nav-container {
-    display: flex;
-    list-style-type: none;
-}
-
-.nav-container {
+    /* display: flex; */
+    list-style: none;
     text-align: right;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-.nav-container ul li {
+.nav-container li {
+    display: inline-block;
     text-decoration: none;
-    position: relative;
-    text-align: right;
+    margin: 20px;
 }
 
 .nav-container a {
@@ -35,6 +35,14 @@ body {
     text-decoration: none;
     /* margin-left: 1em; */
     padding: 14px 16px;
+}
+
+
+/*  change color while hovering */
+
+.nav-container a:hover,
+.nav-container a:active {
+    color: rgb(14, 54, 34);
 }
 
 .img-container {
