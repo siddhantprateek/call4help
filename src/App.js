@@ -2,8 +2,15 @@ import image_1 from "./img/content1.png";
 import image_2 from "./img/content2.png";
 import image_3 from "./img/content3.png";
 import image_4 from "./img/content4.png";
+import logo from "./logo/CH.png";
 import './App.css';
 import React, { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 // import About from "./about/about";
 
 function App() {
@@ -20,20 +27,19 @@ function App() {
       {/* <div class="cursor-follower"></div> */}
       <div className="main">
         <div className="logo">
-          <img src="" alt="" />
+          <a href="App"><img src={logo} alt="ch-logo" /></a>
         </div>
-       
 
         <div className="nav-bar">
           <ul className="nav-container">
             <li>
-              <a  href="@">About Us</a>
+              <Link to="@">About Us</Link>
             </li>
             <li>
-              <a href="@">Availability</a>
+              <Link to="@">Availability</Link>
             </li>
             <li>
-              <a href="@">Sign Up | login</a>
+              <Link to="@">Sign Up | login</Link>
             </li>
           <div className="cursor" style={{
                   left: cursorX + 'px',

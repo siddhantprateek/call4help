@@ -11,6 +11,21 @@ body {
     color: rgb(0, 0, 0);
 }
 
+.main {
+    position: relative;
+}
+
+.logo {
+    margin: 0 auto;
+    position: absolute;
+}
+
+.logo img {
+    height: 30px;
+    width: auto;
+    margin: 20px 20px;
+}
+
 .nav-container {
     /* display: flex; */
     list-style: none;
@@ -27,6 +42,7 @@ body {
 }
 
 .nav-container a {
+    position: relative;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
