@@ -32,7 +32,7 @@ export default function App() {
       
       <div className="main">
         <div className="logo">
-          <a href="App"><img src={logo} alt="ch-logo" /></a>
+          <NavLink to="/"><img src={logo} alt="ch-logo" /></NavLink>
         </div>
 
         <nav className="nav-bar">
@@ -54,18 +54,12 @@ export default function App() {
           </ul>
         </nav>
 
-        <div className="img-container">
-          <img 
-          src={image_1} className="img_1" alt="" />
-          <img 
-          src={image_2} className="img_2" alt="" />
-          <img 
-          src={image_3} className="img_3" alt="" />
-          <img 
-          src={image_4} className="img_4" alt="" />
-        </div>
+        
       </div>
       <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
           <Route exact path="/About">
             <About />
           </Route>
@@ -78,5 +72,22 @@ export default function App() {
         </Switch>
     </div>
     </Router>
+  );
+}
+
+
+function Home(){
+  return(
+    <div className="img-container">
+          <img 
+          src={image_1} className="img_1" alt="" />
+          <img 
+          src={image_2} className="img_2" alt="" />
+          <img 
+          src={image_3} className="img_3" alt="" />
+          <img 
+          src={image_4} className="img_4" alt="" />
+        </div>
+
   );
 }

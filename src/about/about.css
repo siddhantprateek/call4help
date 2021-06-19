@@ -1,4 +1,25 @@
 .About {
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     padding: 40px 40px;
+}
+
+.content p {
+    padding: 250px 50px;
+    position: absolute;
+    color: white;
+    text-align: left;
+    width: auto;
+    height: auto;
+    top: inherit;
+    left: 600px;
+}
+
+.Content-Image {
+    position: absolute;
+    padding: 170px 180px;
+}
+
+.Content-Image img {
+    height: 300px;
+    width: 300px;
 }
