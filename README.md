@@ -1,7 +1,7 @@
 
 ![Group 10](https://user-images.githubusercontent.com/43869046/121190675-e8191f00-c888-11eb-931d-d78881681caa.png)
 # About
-This project is a community interaction project, The main motive for this project is get help and support from others easily.
+This project is a for building the community more interactive and approachable, The main motive for this project is get help and support from others easily.
 
 ![Screenshot 2021-06-08 150010](https://user-images.githubusercontent.com/43869046/121187404-a63aa980-c885-11eb-9b93-d5bbd61dcfcc.png)
 
