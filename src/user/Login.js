@@ -1,8 +1,8 @@
 import React from "react";
-import "./about.css";
+// import "./about.css";
 
 
-export default function About() {
+export default function Login() {
 
     return (
         <div className="About">

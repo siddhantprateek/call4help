@@ -9,11 +9,14 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  NavLink
 } from "react-router-dom";
+import About from "./about/about"
+import Login from "./user/Login"
+import Availability from "./Component/Avail";
 // import About from "./about/about";
 
-function App() {
+export default function App() {
   const [cursorX, setCursorX] = useState()
   const [cursorY, setCursorY] = useState()
 
@@ -23,23 +26,25 @@ function App() {
   })
 
   return (
+    <Router>
     <div className="App">
       {/* <div class="cursor-follower"></div> */}
+      
       <div className="main">
         <div className="logo">
           <a href="App"><img src={logo} alt="ch-logo" /></a>
         </div>
 
-        <div className="nav-bar">
+        <nav className="nav-bar">
           <ul className="nav-container">
             <li>
-              <Link to="@">About Us</Link>
+              <NavLink  to="/About">About Us</NavLink>
             </li>
             <li>
-              <Link to="@">Availability</Link>
+              <NavLink to="/Availability">Availability</NavLink>
             </li>
             <li>
-              <Link to="@">Sign Up | login</Link>
+              <NavLink to="/Login">Sign Up | login</NavLink>
             </li>
           <div className="cursor" style={{
                   left: cursorX + 'px',
@@ -47,18 +52,31 @@ function App() {
           }}>
           </div>
           </ul>
-        </div>
+        </nav>
 
         <div className="img-container">
-          <img src={image_1} className="img_1" alt="" />
-          <img src={image_2} className="img_2" alt="" />
-          <img src={image_3} className="img_3" alt="" />
-          <img src={image_4} className="img_4" alt="" />
+          <img 
+          src={image_1} className="img_1" alt="" />
+          <img 
+          src={image_2} className="img_2" alt="" />
+          <img 
+          src={image_3} className="img_3" alt="" />
+          <img 
+          src={image_4} className="img_4" alt="" />
         </div>
       </div>
+      <Switch>
+          <Route exact path="/About">
+            <About />
+          </Route>
+          <Route exact path="/Availability">
+            <Availability />
+          </Route>
+          <Route exact path="/Login">
+            <Login />
+          </Route>
+        </Switch>
     </div>
-
+    </Router>
   );
 }
-
-export default App;
