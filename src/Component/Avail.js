@@ -8,7 +8,7 @@ export default function Avail() {
         <div className="Avail">
             <div className="content-3">
                 <p>
-                Coming Soon...
+                Coming Soon.
                 </p>
             </div>
         </div>
