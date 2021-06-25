@@ -6,7 +6,7 @@ This project is a for building the community more interactive and approachable, 
 ![Screenshot 2021-06-08 150010](https://user-images.githubusercontent.com/43869046/121187404-a63aa980-c885-11eb-9b93-d5bbd61dcfcc.png)
 
 # Installation
-
+Before start the installing make sure you have [node](https://nodejs.org/en/) installed in your local machine.
 Some of the requirements for this project can installed through running the below command inside root `\call4help` 📂 directory.
 ```shell
 npm install 
