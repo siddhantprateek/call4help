@@ -62,32 +62,29 @@ body {
     padding: 14px 6px;
 }
 
-img {
-    display: block;
+.images {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
 }
 
-.img_1 {
-    height: 60vmin;
-    width: auto;
-    padding: 20px 70px;
+.images ul {
+    width: 20px auto;
 }
 
-.img_2 {
-    height: 60vmin;
-    width: auto;
-    padding: 85px 80px;
+.images li {
+    padding: 0 3%;
+    display: inline-block;
 }
 
-.img_3 {
-    height: 60vmin;
-    width: auto;
-    padding: 20px 80px;
+.images li img {
+    height: 500px;
+    max-width: 100%;
 }
 
-.img_4 {
-    height: 60vmin;
-    width: auto;
-    padding: 85px 80px;
+.images li:hover {
+    position: relative;
+    top: -10px;
 }
 
 ul li:hover~.cursor {
