@@ -29,8 +29,7 @@ export default function App() {
     <Router>
     <div className="App">
       {/* <div class="cursor-follower"></div> */}
-      
-      <div className="main">
+      <header>
         <div className="logo">
           <NavLink to="/"><img src={logo} alt="ch-logo" /></NavLink>
         </div>
@@ -46,16 +45,15 @@ export default function App() {
             <li>
               <NavLink to="/Login">Sign Up | login</NavLink>
             </li>
-          <div className="cursor" style={{
-                  left: cursorX + 'px',
-                  top: cursorY + 'px'
-          }}>
-          </div>
+            <div className="cursor" style={{
+                      left: cursorX + 'px',
+                      top: cursorY + 'px'
+              }}>
+            </div>
           </ul>
         </nav>
+      </header>
 
-        
-      </div>
       <Switch>
           <Route exact path="/">
             <Home />
@@ -78,16 +76,20 @@ export default function App() {
 
 function Home(){
   return(
-    <div className="img-container">
-          <img 
-          src={image_1} className="img_1" alt="" />
-          <img 
-          src={image_2} className="img_2" alt="" />
-          <img 
+    <div className="images">
+      <ul>
+        <li><img
+          src={image_1} className="img_1" alt="" /></li>
+        <li><img
+          src={image_2} className="img_2" alt="" /></li> 
+        <li><img
           src={image_3} className="img_3" alt="" />
-          <img 
+        </li>
+        <li><img
           src={image_4} className="img_4" alt="" />
-        </div>
+        </li>
+      </ul>
+    </div>
 
   );
 }
