@@ -1,7 +1,3 @@
-import image_1 from "./img/content1.png";
-import image_2 from "./img/content2.png";
-import image_3 from "./img/content3.png";
-import image_4 from "./img/content4.png";
 import logo from "./logo/CH.png";
 import './App.css';
 import React, { useState } from "react";
@@ -11,10 +7,11 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
-import About from "./about/about"
-import Login from "./user/Login"
-import Availability from "./Component/Avail";
-// import About from "./about/about";
+
+import About from "./components/about/about.components"
+import Login from "./components/userLogin/login.components"
+import Availability from "./components/Available/avail.components";
+import Home from './components/Home/Home.components';
 
 export default function App() {
   const [cursorX, setCursorX] = useState()
@@ -33,7 +30,6 @@ export default function App() {
         <div className="logo">
           <NavLink to="/"><img src={logo} alt="ch-logo" /></NavLink>
         </div>
-
         <nav className="nav-bar">
           <ul className="nav-container">
             <li>
@@ -70,26 +66,5 @@ export default function App() {
         </Switch>
     </div>
     </Router>
-  );
-}
-
-
-function Home(){
-  return(
-    <div className="images">
-      <ul>
-        <li><img
-          src={image_1} className="img_1" alt="" /></li>
-        <li><img
-          src={image_2} className="img_2" alt="" /></li> 
-        <li><img
-          src={image_3} className="img_3" alt="" />
-        </li>
-        <li><img
-          src={image_4} className="img_4" alt="" />
-        </li>
-      </ul>
-    </div>
-
   );
 }
