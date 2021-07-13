@@ -1,0 +1,36 @@
+/*  change color while hovering */
+
+.img-container {
+    display: grid;
+    display: flex;
+    padding: 14px 6px;
+}
+
+.images {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.images ul {
+    width: 20px auto;
+}
+
+.images li {
+    padding: 10% 3%;
+    display: inline-block;
+}
+
+.images li img {
+    height: 500px;
+    max-width: 100%;
+}
+
+.images li:hover {
+    position: relative;
+    top: -10px;
+}
+
+ul li:hover~.cursor {
+    transform: scale(5);
+}
