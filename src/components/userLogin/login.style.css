@@ -1,4 +1,4 @@
-.content-2 p {
-    padding: 40px 40px;
-    color: white;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+.login-card {
+    font-family: 'Poppins', sans-serif;
 }
