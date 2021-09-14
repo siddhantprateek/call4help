@@ -10,15 +10,17 @@
     text-align: center;
     margin: 80px 0;
     white-space: nowrap;
+
 }
 
 .images ul {
-    width: 20px auto;
+    width: 20px auto
 }
 
 .images li {
     padding: 10% 3%;
     display: inline-block;
+    transition: all .5s;
 }
 
 .images li img {
@@ -27,8 +29,9 @@
 }
 
 .images li:hover {
-    position: relative;
-    top: -10px;
+    /* position: relative; */
+    transform: scale(1.06);
+    /* top: -10px; */
 }
 
 ul li:hover~.cursor {

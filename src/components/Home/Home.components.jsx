@@ -1,9 +1,9 @@
 import React from 'react';
-import image_1 from "../img/content1.png";
-import image_2 from "../img/content2.png";
-import image_3 from "../img/content3.png";
-import image_4 from "../img/content4.png";
-import './home.style.css'
+import image_1 from "../../assets/img/content1.png";
+import image_2 from "../../assets/img/content2.png";
+import image_3 from "../../assets/img/content3.png";
+import image_4 from "../../assets/img/content4.png";
+import './home.style.css';
 
 export default function Home(){
     return(

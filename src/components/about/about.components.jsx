@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.style.css";
-import Image from '../img/aboutPro.png';
+import Image from '../../assets/img/aboutPro.png';
 // import App from '../App';
 
 export default function About() {
